@@ -51,6 +51,5 @@ public class CustomerController {
 
         return customerData.map(customer -> new ResponseEntity<>(customerData.get(), HttpStatus.OK))
                 .orElseThrow(() -> new ItemNotFoundException(reference));
-                //.orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 }
